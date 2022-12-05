@@ -1,0 +1,60 @@
+{
+  "name": "@lemasc/firebase-wrapper",
+  "version": "1.0.0",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lemasc/firebase-wrapper/issues"
+  },
+  "homepage": "https://github.com/lemasc/firebase-wrapper.git#readme",
+  "main": "build/index.js",
+  "types": "index.d.ts",
+  "files": [
+    "!**/__tests__",
+    "./src",
+    "./build",
+    "./app",
+    "./auth",
+    "./firestore"
+  ],
+  "exports": {
+    "./app": {
+      "default": "./build/app/index.js",
+      "types": "./build/app/index.d.ts"
+    },
+    "./auth": {
+      "default": "./build/auth/index.js",
+      "types": "./build/auth/index.d.ts"
+    },
+    "./firestore": {
+      "default": "./build/firestore/index.js",
+      "types": "./build/firestore/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "expo-module build",
+    "clean": "expo-module clean",
+    "test": "expo-module test",
+    "prepare": "expo-module prepare",
+    "prepublishOnly": "expo-module prepublishOnly",
+    "expo-module": "expo-module"
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@react-native-firebase/app": "^14.9.4",
+    "@react-native-firebase/auth": "^14.9.4",
+    "@react-native-firebase/firestore": "^14.9.4",
+    "expo-module-scripts": "^2.0.0",
+    "firebase": "^9.1.0",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.4"
+  },
+  "peerDependencies": {
+    "@react-native-firebase/app": "*",
+    "@react-native-firebase/auth": "^9.1.0",
+    "@react-native-firebase/firestore": "^9.1.0",
+    "firebase": "^9.1.0"
+  }
+}
