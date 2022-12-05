@@ -1,6 +1,6 @@
 {
   "name": "@lemasc/firebase-wrapper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lemasc/firebase-wrapper/issues"
@@ -49,12 +49,13 @@
     "firebase": "^9.1.0",
     "prettier": "^2.6.2",
     "release-it": "^15.5.1",
+    "rimraf": "^3.0.2",
     "typescript": "^4.6.4"
   },
   "peerDependencies": {
     "@react-native-firebase/app": "*",
-    "@react-native-firebase/auth": "^9.1.0",
-    "@react-native-firebase/firestore": "^9.1.0",
+    "@react-native-firebase/auth": "*",
+    "@react-native-firebase/firestore": "*",
     "firebase": "^9.1.0"
   }
 }
