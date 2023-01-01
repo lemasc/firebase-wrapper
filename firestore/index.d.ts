@@ -1,1 +1,1 @@
-export * from "../build/firestore"
+export * from "../lib/typescript/firestore";

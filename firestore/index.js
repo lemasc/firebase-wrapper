@@ -1,1 +1,1 @@
-export * from "../build/firestore"
+module.exports = require("../lib/commonjs/firestore");

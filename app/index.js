@@ -1,1 +1,1 @@
-export * from "../build/app"
+module.exports = require("../lib/commonjs/app");

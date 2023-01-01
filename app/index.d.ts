@@ -1,1 +1,1 @@
-export * from "../build/app"
+export * from "../lib/typescript/app";

@@ -1,1 +1,1 @@
-export * from "../build/auth"
+export * from "../lib/typescript/auth";

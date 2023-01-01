@@ -1,1 +1,1 @@
-export * from "../build/auth"
+module.exports = require("../lib/commonjs/auth");
